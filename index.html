@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Laboratorio 4</title>
+</head>
+
+<body>
+    <script>
+
+        let c="";
+
+        while (c!="salir"){
+        let a=parseInt(prompt("Ingresar numero 1"));
+        let b=parseInt(prompt("Ingresar numero 2"));
+        c =prompt("Que operacion desea");
+        alert(realizarOperacion(a,b,c));
+        }
+
+        function realizarOperacion (num1, num2, Operacion){
+            if(Operacion=="+") {
+                let suma=num1+num2;
+                return suma;
+        }
+
+           else if (Operacion=="-"){
+                let resta=num1-num2;
+                return resta;
+            }
+
+            if (Operacion=="*"){
+                let multiplicacion=num1*num2;
+                return multiplicacion;
+            }
+
+            if (Operacion=="/"){
+                let division=num1/num2;
+                return division;
+            }
+
+            else {
+                document.write("seleccion mala");
+            }
+
+        }
+
+
+
+
+        function sumita(a,b) {
+            return a+b;
+        }
+
+        function restita(a,b){
+            return a-b;
+        }
+
+        function multi(a,b){
+            return a*b;
+        }
+
+        function dividir(a,b){
+            return a/b;
+        }
+
+        let suma = sumita(numero1,numero2);
+        let resta = restita(numero1,numero2);
+        let multiplicacion= multi(numero1,numero2);
+        let division= dividir(numero1,numero2);
+
+        document.write(suma, "<br>")
+        document.write(resta, "<br>")
+        document.write(multiplicacion, "<br>")
+        document.write(division, "<br>")
+
+        </script>
+
+    </body>
+</html>
